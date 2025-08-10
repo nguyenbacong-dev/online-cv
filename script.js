@@ -22,3 +22,12 @@ buttons.forEach(btn => {
     setTimeout(() => activeSection.classList.add('fade-in-active'), 10);
   });
 });
+
+    const quotesContainer = document.getElementById("quotes-container");
+    const quotesCount = quotesContainer.children.length;
+    let currentIndex = 0;
+    
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % quotesCount;
+      quotesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }, 3000); // đổi câu sau 3 giây
