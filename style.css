@@ -1,0 +1,102 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.info-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #9ca3af;
+}
+
+.break-all {
+  word-break: break-word;
+}
+
+.nav-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 8px;
+  color: #6b7280;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+.nav-button i { font-size: 18px; }
+.nav-button:hover {
+  background-color: #2563eb;
+  color: white;
+  transform: translateY(-1px);
+}
+.nav-button.active {
+  background-color: #2563eb;
+  color: white;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+  pointer-events: none;
+}
+
+.title {
+  color: #1f2937;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.desc {
+  color: #6b7280;
+  font-size: 14px;
+}
+.subtitle {
+  color: #1f2937;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.skill-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  font-size: 13px;
+  color: #6b7280;
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+.skill-card h5 {
+  color: #1f2937;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.testimonial-card {
+  background-color: #f4f8fc;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.section-content {
+  min-height: 500px;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.fade-in-active {
+  opacity: 1;
+  transform: translateY(0);
+}
